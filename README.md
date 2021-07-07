@@ -22,7 +22,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+add db:migrate for a unique constraint at the database level 
+
+```
+add_index :users, :key, :email, unique: true
+```
+
+How to prevent duplicate database record creation
+
+```
+User.retry_on_duplicate do
+  User.find_or_create_by(email: email)
+end
+```
+
+
+## Problems Solved
+
+- `ActiveRecord::RecordNotUnique: Mysql2::Error: Duplicate entry`
+
+- `ActiveRecord::RecordNotUnique: PG::UniqueViolation: ERROR: duplicate key value violates unique constraint `
+
 
 ## Development
 
