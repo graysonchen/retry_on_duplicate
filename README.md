@@ -25,7 +25,7 @@ Or install it yourself as:
 add db:migrate for a unique constraint at the database level 
 
 ```
-add_index :users, :key, :email, unique: true
+add_index :users, :email, unique: true
 ```
 
 How to prevent duplicate database record creation
