@@ -1,5 +1,6 @@
 # RetryOnDuplicate
 
+[![Build Status](https://app.travis-ci.com/graysonchen/retry_on_duplicate.svg?branch=master)](https://app.travis-ci.com/graysonchen/retry_on_duplicate)
 
 ## Installation
 
