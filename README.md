@@ -1,6 +1,6 @@
 # RetryOnDuplicate
 
-[![Build Status](https://app.travis-ci.com/graysonchen/retry_on_duplicate.svg?branch=master)](https://app.travis-ci.com/graysonchen/retry_on_duplicate)
+[![CircleCI](https://circleci.com/gh/graysonchen/retry_on_duplicate/tree/master.svg?style=svg)](https://circleci.com/gh/graysonchen/retry_on_duplicate)
 
 ## Installation
 
