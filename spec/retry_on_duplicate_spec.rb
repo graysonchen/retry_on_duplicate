@@ -1,6 +1,6 @@
-RSpec.describe ActiveRecordActiveRecordRetryOnDuplicate do
+RSpec.describe ActiveRecordRetryOnDuplicate do
   it "has a version number" do
-    expect(ActiveRecordActiveRecordRetryOnDuplicate::VERSION).not_to be nil
+    expect(ActiveRecordRetryOnDuplicate::VERSION).not_to be nil
   end
 
   it "does something useful" do

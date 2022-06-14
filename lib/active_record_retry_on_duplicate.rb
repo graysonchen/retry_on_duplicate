@@ -1,7 +1,6 @@
-require "active_support/lazy_load_hooks"
-require "retry_on_duplicate/version"
+require "active_record_retry_on_duplicate/version"
 
-module ActiveRecordActiveRecordRetryOnDuplicate
+module ActiveRecordRetryOnDuplicate
   def self.included(base)
     base.send :extend, ClassMethods
   end
@@ -42,8 +41,4 @@ module ActiveRecordActiveRecordRetryOnDuplicate
           err.message.include?("has already been taken"))
     end
   end
-end
-
-ActiveSupport.on_load(:active_record) do
-  ActiveRecord::Base.send :include, ActiveRecordRetryOnDuplicate
 end
