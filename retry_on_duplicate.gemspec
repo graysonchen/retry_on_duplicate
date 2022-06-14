@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "retry_on_duplicate/version"
+require "active_record_retry_on_duplicate/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "retry_on_duplicate"
-  spec.version       = RetryOnDuplicate::VERSION
+  spec.version       = ActiveRecordRetryOnDuplicate::VERSION
   spec.authors       = ["Grayson Chen"]
   spec.email         = ["cgg5207@sina.com"]
 

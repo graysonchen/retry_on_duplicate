@@ -1,7 +1,7 @@
 require "active_support/lazy_load_hooks"
 require "retry_on_duplicate/version"
 
-module RetryOnDuplicate
+module ActiveRecordActiveRecordRetryOnDuplicate
   def self.included(base)
     base.send :extend, ClassMethods
   end
@@ -45,5 +45,5 @@ module RetryOnDuplicate
 end
 
 ActiveSupport.on_load(:active_record) do
-  ActiveRecord::Base.send :include, RetryOnDuplicate
+  ActiveRecord::Base.send :include, ActiveRecordRetryOnDuplicate
 end
